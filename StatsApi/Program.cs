@@ -21,6 +21,8 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<StatsDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<StatsApi.Services.StatsService>();
+
 var app = builder.Build();
 
 // app.UseHttpsRedirection();

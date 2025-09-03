@@ -10,5 +10,6 @@ namespace StatsApi.Models
         public int Assists { get; set; }
         public int Deaths { get; set; }
         public int Revives { get; set; }
+        public bool Won { get; set; }
     }
 }
